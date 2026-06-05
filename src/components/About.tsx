@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { getEventDateText } from "@/lib/utils";
 
-const headlineLines = ["Welcome to", "Persona Plus"];
+const headlineLines = ["Empower the Persona.", "Elevate the Plus."];
 
 const About = () => {
   const stats = [

@@ -3,7 +3,7 @@ import ParticleField from "./ParticleField";
 import logo from "@/assets/persona-logo.jpeg";
 import { getEventDateText } from "@/lib/utils";
 
-const headline = "Build. Innovate. Grow.";
+const headline = "Empower the Persona. Elevate the Plus.";
 const words = headline.split(" ");
 
 const container = {
@@ -78,7 +78,7 @@ const Hero = () => {
 
         <motion.div variants={item} className="inline-block">
           <div className="glass-card glow-border rounded-full px-5 py-2 text-xs sm:text-sm tracking-[0.25em] uppercase text-teal pulse-glow">
-            🎯 Welcome to Persona+
+            🎯 Official Soft Skills Club
           </div>
         </motion.div>
 
@@ -97,18 +97,9 @@ const Hero = () => {
           </motion.span>
         </h1>
 
-        <motion.p variants={item} className="mt-6 text-base sm:text-lg md:text-xl text-teal/70 max-w-2xl mx-auto">
-          A bold mission. Infinite growth.
+        <motion.p variants={item} className="mt-6 text-base sm:text-lg md:text-xl text-teal/70 max-w-2xl mx-auto font-medium">
+          The Official Soft Skills Club of Sri Jayachamarajendra College of Engineering (JSS STU).
         </motion.p>
-
-        <motion.div variants={item} className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <span className="glass-card rounded-full px-4 py-2 text-xs sm:text-sm tracking-wide text-teal flex items-center gap-2">
-            📍 <span className="font-semibold">IS Seminar Hall</span>
-          </span>
-          <span className="glass-card rounded-full px-4 py-2 text-xs sm:text-sm tracking-wide text-teal flex items-center gap-2">
-            ⏰ <span className="font-semibold">May 8th · 1:30 PM & 5:30 PM</span>
-          </span>
-        </motion.div>
 
       </motion.div>
 
