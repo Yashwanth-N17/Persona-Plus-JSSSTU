@@ -23,18 +23,14 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin size={20} className="shrink-0 mt-1" />
                 <p className="leading-relaxed">
-                  The Training and Placement Cell<br />
-                  JSS Science and Technology University, Mysuru, 570006
+                  JSS Science and Technology University<br />
+                  The Training and Placement Cell, Mysuru, 570006
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Phone size={20} className="shrink-0" />
-                <p>+(91) 9876543210</p>
-              </div>
-              <div className="flex items-center gap-3">
                 <Mail size={20} className="shrink-0" />
-                <a href="mailto:personaplus@jssstuniv.in" className="hover:text-teal transition-colors">
-                  personaplus@jssstuniv.in
+                <a href="mailto:persona.jssstu@gmail.com" className="hover:text-teal transition-colors">
+                  persona.jssstu@gmail.com
                 </a>
               </div>
             </div>
@@ -45,10 +41,10 @@ const Footer = () => {
             <h4 className="text-xl font-bold text-foreground">IMPORTANT LINKS</h4>
             <div className="flex flex-col gap-3 text-teal/80 font-medium">
               <a href="https://jssstuniv.in/" target="_blank" rel="noreferrer" className="hover:text-teal transition-colors w-max">JSS STU Official</a>
-              <a href="/#about" className="hover:text-teal transition-colors w-max">About Us</a>
+              <Link to="/#about" className="hover:text-teal transition-colors w-max">About Us</Link>
               <Link to="/events" className="hover:text-teal transition-colors w-max">Events Timeline</Link>
               <Link to="/team" className="hover:text-teal transition-colors w-max">Executive Board</Link>
-              <a href="/#contact" className="hover:text-teal transition-colors w-max">Contact Us</a>
+              <Link to="/contact" className="hover:text-teal transition-colors w-max">Contact Us</Link>
             </div>
           </div>
 
@@ -63,7 +59,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/persona_plus_jssstu" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-teal-pale/30 text-teal hover:bg-teal hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="mailto:personaplus@jssstuniv.in" className="p-3 rounded-full bg-teal-pale/30 text-teal hover:bg-teal hover:text-white transition-colors">
+              <a href="mailto:persona.jssstu@gmail.com" className="p-3 rounded-full bg-teal-pale/30 text-teal hover:bg-teal hover:text-white transition-colors">
                 <Mail size={20} />
               </a>
             </div>

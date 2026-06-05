@@ -76,10 +76,10 @@ const Hero = () => {
           </h2>
           <div className="flex flex-col items-center gap-1">
             <span className="text-sm sm:text-base font-semibold tracking-[0.2em] text-teal/80 uppercase text-center">
-              The Training and Placement Cell
+              JSS Science and Technology University
             </span>
             <span className="text-xs sm:text-sm font-medium tracking-widest text-teal/60 uppercase text-center">
-              JSS Science and Technology University
+              The Training and Placement Cell
             </span>
           </div>
         </motion.div>

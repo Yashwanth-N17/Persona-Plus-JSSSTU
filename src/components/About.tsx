@@ -38,9 +38,11 @@ const About = () => {
           </h2>
           <motion.p
             variants={{ hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
-            className="mt-8 text-lg text-teal/80 leading-relaxed max-w-lg"
+            className="mt-8 text-base sm:text-lg text-teal/80 leading-relaxed max-w-lg"
           >
-            We're a community dedicated to helping you develop essential soft skills, grow as a leader, and make a lasting impact. Join Persona Plus and evolve with us.
+            We're a community dedicated to helping you develop essential soft skills, grow as a leader, and make a lasting impact. Functioning under the Placement & Training Cell of JSSSTU, Persona+ is driven by a clear purpose: to bridge the gap between academic learning and essential life skills like communication and professional presence.
+            <br /><br />
+            Join us in building a culture of continuous learning and meaningful development under the guidance of Pradeep Manjunath and Roopa Priya.
           </motion.p>
           <motion.div
             variants={{ hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0 } }}

@@ -48,22 +48,12 @@ const Contact = () => {
               
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-teal-pale/30 text-teal shrink-0">
-                  <Phone size={24} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-foreground text-lg">Phone</h4>
-                  <p className="text-teal/80 leading-relaxed mt-1">+(91) 7795317819</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-teal-pale/30 text-teal shrink-0">
                   <Mail size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-foreground text-lg">Email</h4>
-                  <a href="mailto:personaplus@jssstuniv.in" className="text-teal/80 hover:text-teal transition-colors leading-relaxed mt-1 block">
-                    personaplus@jssstuniv.in
+                  <a href="mailto:persona.jssstu@gmail.com" className="text-teal/80 hover:text-teal transition-colors leading-relaxed mt-1 block">
+                    persona.jssstu@gmail.com
                   </a>
                 </div>
               </div>
