@@ -35,7 +35,7 @@ const Navbar = () => {
             alt="Persona+ logo"
             className="w-10 h-10 rounded-full object-cover"
             style={{
-              boxShadow: "0 0 20px rgba(82, 171, 152,0.7), 0 0 40px rgba(82, 171, 152,0.3)",
+              boxShadow: "0 0 20px rgba(74, 139, 175,0.7), 0 0 40px rgba(74, 139, 175,0.3)",
               border: "1px solid rgba(200, 216, 228,0.5)",
             }}
           />

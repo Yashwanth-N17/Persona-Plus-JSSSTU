@@ -25,15 +25,15 @@ const Hero = () => {
       {/* Ambient blobs */}
       <div
         className="absolute top-1/4 left-[10%] w-[420px] h-[420px] rounded-full float-blob pointer-events-none"
-        style={{ background: "radial-gradient(circle, #2b6777 0%, transparent 70%)", filter: "blur(90px)", opacity: 0.5 }}
+        style={{ background: "radial-gradient(circle, #1e4b6b 0%, transparent 70%)", filter: "blur(90px)", opacity: 0.5 }}
       />
       <div
         className="absolute bottom-[15%] right-[8%] w-[500px] h-[500px] rounded-full float-blob pointer-events-none"
-        style={{ background: "radial-gradient(circle, #52ab98 0%, transparent 70%)", filter: "blur(100px)", opacity: 0.4, animationDelay: "3s" }}
+        style={{ background: "radial-gradient(circle, #4a8baf 0%, transparent 70%)", filter: "blur(100px)", opacity: 0.4, animationDelay: "3s" }}
       />
       <div
         className="absolute top-[20%] right-[20%] w-[300px] h-[300px] rounded-full float-blob pointer-events-none"
-        style={{ background: "radial-gradient(circle, #52ab98 0%, transparent 70%)", filter: "blur(80px)", opacity: 0.35, animationDelay: "6s" }}
+        style={{ background: "radial-gradient(circle, #4a8baf 0%, transparent 70%)", filter: "blur(80px)", opacity: 0.35, animationDelay: "6s" }}
       />
       {/* Radial overlay */}
       <div
@@ -54,7 +54,7 @@ const Hero = () => {
             className="absolute inset-0 rounded-full pointer-events-none"
             style={{
               border: "1px dashed rgba(200, 216, 228,0.4)",
-              boxShadow: "0 0 60px rgba(82, 171, 152,0.4), inset 0 0 30px rgba(82, 171, 152,0.2)",
+              boxShadow: "0 0 60px rgba(74, 139, 175,0.4), inset 0 0 30px rgba(74, 139, 175,0.2)",
             }}
           />
           <motion.img
@@ -62,7 +62,7 @@ const Hero = () => {
             alt="Persona+ logo"
             className="w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover relative"
             style={{
-              boxShadow: "0 0 60px rgba(82, 171, 152,0.3), 0 0 120px rgba(82, 171, 152,0.4)",
+              boxShadow: "0 0 60px rgba(74, 139, 175,0.3), 0 0 120px rgba(74, 139, 175,0.4)",
               border: "2px solid rgba(200, 216, 228,0.6)",
             }}
             animate={{ y: [0, -8, 0] }}

@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="relative pt-32 pb-12 px-6 overflow-hidden">
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[2px]"
-        style={{ background: "linear-gradient(90deg, transparent, #52ab98, transparent)", boxShadow: "0 0 30px rgba(82, 171, 152,0.2)" }}
+        style={{ background: "linear-gradient(90deg, transparent, #4a8baf, transparent)", boxShadow: "0 0 30px rgba(74, 139, 175,0.2)" }}
       />
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[200px] pointer-events-none"
-        style={{ background: "radial-gradient(ellipse at top, rgba(82, 171, 152,0.25), transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse at top, rgba(74, 139, 175,0.25), transparent 70%)" }}
       />
       <motion.div
         initial="hidden"
@@ -29,7 +29,7 @@ const Footer = () => {
             alt="Persona+ logo"
             className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover"
             style={{
-              boxShadow: "0 0 50px rgba(82, 171, 152,0.7), 0 0 100px rgba(82, 171, 152,0.3)",
+              boxShadow: "0 0 50px rgba(74, 139, 175,0.7), 0 0 100px rgba(74, 139, 175,0.3)",
               border: "2px solid rgba(200, 216, 228,0.5)",
             }}
           />

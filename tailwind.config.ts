@@ -50,9 +50,9 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         teal: {
-          DEFAULT: "#2b6777",
-          light: "#52ab98",
-          pale: "#c8d8e4",
+          DEFAULT: "#1e4b6b",
+          light: "#4a8baf",
+          pale: "#97bace",
         },
         ink: "#f2f2f2",
       },

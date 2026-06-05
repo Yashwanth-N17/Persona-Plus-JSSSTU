@@ -18,9 +18,9 @@ const ParticleField = () => {
       background: { color: { value: "transparent" } },
       fpsLimit: 60,
       particles: {
-        color: { value: ["#52ab98", "#52ab98", "#2b6777"] },
+        color: { value: ["#4a8baf", "#4a8baf", "#1e4b6b"] },
         links: {
-          color: "#52ab98",
+          color: "#4a8baf",
           distance: 140,
           enable: true,
           opacity: 0.25,

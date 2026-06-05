@@ -52,8 +52,8 @@ const CustomCursor = () => {
           top: pos.y - 8,
           width: 16,
           height: 16,
-          background: "radial-gradient(circle, #52ab98 0%, #52ab98 60%, transparent 100%)",
-          boxShadow: "0 0 20px rgba(82, 171, 152,0.9), 0 0 40px rgba(200, 216, 228,0.6)",
+          background: "radial-gradient(circle, #4a8baf 0%, #4a8baf 60%, transparent 100%)",
+          boxShadow: "0 0 20px rgba(74, 139, 175,0.9), 0 0 40px rgba(200, 216, 228,0.6)",
           willChange: "transform",
         }}
         animate={{ scale: hovering ? 2.2 : 1 }}
@@ -66,7 +66,7 @@ const CustomCursor = () => {
           top: trail.y - 24,
           width: 48,
           height: 48,
-          background: "radial-gradient(circle, rgba(82, 171, 152,0.25) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(74, 139, 175,0.25) 0%, transparent 70%)",
           willChange: "transform",
         }}
       />
