@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { getEventDateText } from "@/lib/utils";
+import { MessageSquare, TrendingUp, Users } from "lucide-react";
 
 const headlineLines = ["Empower the Persona.", "Elevate the Plus."];
 
 const About = () => {
   const stats = [
-    { title: "Soft Skills Development", emoji: "🗣️" },
-    { title: "Leadership & Growth", emoji: "📈" },
-    { title: "Community & Networking", emoji: "🤝" },
+    { title: "Soft Skills Development", icon: <MessageSquare size={36} className="text-teal" /> },
+    { title: "Leadership & Growth", icon: <TrendingUp size={36} className="text-teal" /> },
+    { title: "Community & Networking", icon: <Users size={36} className="text-teal" /> },
   ];
 
   return (
@@ -64,7 +65,7 @@ const About = () => {
               className="glass-card-strong glow-border rounded-2xl p-6 flex items-center gap-5 float-card"
               style={{ animationDelay: `${i * 0.6}s`, willChange: "transform" }}
             >
-              <div className="text-5xl">{s.emoji}</div>
+              <div>{s.icon}</div>
               <div>
                 <div className="text-xl font-semibold text-foreground">{s.title}</div>
               </div>

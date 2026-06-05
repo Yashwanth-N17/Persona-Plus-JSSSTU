@@ -53,8 +53,9 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 font-medium text-foreground">
             <a href="/#about" className="hover:text-teal transition-colors">About</a>
-            <a href="/#events" className="hover:text-teal transition-colors">Events</a>
+            <Link to="/events" className="hover:text-teal transition-colors">Events</Link>
             <Link to="/team" className="hover:text-teal transition-colors">Team</Link>
+            <a href="/#contact" className="hover:text-teal transition-colors">Contact</a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -78,8 +79,9 @@ const Navbar = () => {
             className="fixed inset-0 z-[7900] bg-white pt-24 px-6 md:hidden flex flex-col gap-6 font-medium text-lg text-foreground border-b border-teal-pale/40"
           >
             <a href="/#about" onClick={closeMenu} className="hover:text-teal transition-colors py-2 border-b border-teal-pale/20">About</a>
-            <a href="/#events" onClick={closeMenu} className="hover:text-teal transition-colors py-2 border-b border-teal-pale/20">Events</a>
+            <Link to="/events" onClick={closeMenu} className="hover:text-teal transition-colors py-2 border-b border-teal-pale/20">Events</Link>
             <Link to="/team" onClick={closeMenu} className="hover:text-teal transition-colors py-2 border-b border-teal-pale/20">Team</Link>
+            <a href="/#contact" onClick={closeMenu} className="hover:text-teal transition-colors py-2 border-b border-teal-pale/20">Contact</a>
           </motion.div>
         )}
       </AnimatePresence>

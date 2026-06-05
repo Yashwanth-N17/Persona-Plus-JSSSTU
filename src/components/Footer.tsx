@@ -23,8 +23,8 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin size={20} className="shrink-0 mt-1" />
                 <p className="leading-relaxed">
-                  Sri Jayachamarajendra College of Engineering<br />
-                  JSS STU Campus, Mysuru, 570006
+                  The Training and Placement Cell<br />
+                  JSS Science and Technology University, Mysuru, 570006
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -46,8 +46,9 @@ const Footer = () => {
             <div className="flex flex-col gap-3 text-teal/80 font-medium">
               <a href="https://jssstuniv.in/" target="_blank" rel="noreferrer" className="hover:text-teal transition-colors w-max">JSS STU Official</a>
               <a href="/#about" className="hover:text-teal transition-colors w-max">About Us</a>
-              <a href="/#events" className="hover:text-teal transition-colors w-max">Events Timeline</a>
+              <Link to="/events" className="hover:text-teal transition-colors w-max">Events Timeline</Link>
               <Link to="/team" className="hover:text-teal transition-colors w-max">Executive Board</Link>
+              <a href="/#contact" className="hover:text-teal transition-colors w-max">Contact Us</a>
             </div>
           </div>
 
@@ -72,7 +73,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-teal-pale/40 text-center md:flex md:justify-between md:items-center">
           <p className="text-sm text-teal/80 font-medium mb-4 md:mb-0">
-            Copyrights &copy; {new Date().getFullYear()} Persona Plus | JSS STU
+            Copyrights &copy; {new Date().getFullYear()} Persona Plus | JSS Science and Technology University
           </p>
           <p className="text-sm text-teal/80 font-medium">
             Developed by the Tech Board at Persona Plus

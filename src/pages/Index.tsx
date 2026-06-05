@@ -3,8 +3,9 @@ import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Events from "@/components/Events";
+import CompletedEvents from "@/components/CompletedEvents";
 import Coordinator from "@/components/Coordinator";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -15,8 +16,9 @@ const Index = () => {
       <Navbar />
       <Hero />
       <About />
-      <Events />
+      <CompletedEvents />
       <Coordinator />
+      <Contact />
       <Footer />
     </main>
   );

@@ -70,10 +70,18 @@ const Hero = () => {
           />
         </motion.div>
         
-        <motion.div variants={item} className="mb-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider text-teal">
+        <motion.div variants={item} className="mb-6 flex flex-col items-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider text-teal mb-4">
             Persona Plus
           </h2>
+          <div className="flex flex-col items-center gap-1">
+            <span className="text-sm sm:text-base font-semibold tracking-[0.2em] text-teal/80 uppercase text-center">
+              The Training and Placement Cell
+            </span>
+            <span className="text-xs sm:text-sm font-medium tracking-widest text-teal/60 uppercase text-center">
+              JSS Science and Technology University
+            </span>
+          </div>
         </motion.div>
 
         <motion.div variants={item} className="inline-block">
@@ -98,43 +106,16 @@ const Hero = () => {
         </h1>
 
         <motion.p variants={item} className="mt-6 text-base sm:text-lg md:text-xl text-teal/70 max-w-2xl mx-auto font-medium">
-          The Official Soft Skills Club of Sri Jayachamarajendra College of Engineering (JSS STU).
+          The Official Soft Skills Club under The Training and Placement Cell, JSS Science and Technology University.
         </motion.p>
 
       </motion.div>
 
-      {/* Marquee bottom */}
-      <div className="relative z-10 mt-12 py-5 border-y border-teal-pale/15 bg-white/60 backdrop-blur-sm space-y-2">
-        <Marquee
-          direction="left"
-          items={["LEADERSHIP", "OPPORTUNITY", "GROWTH", "INNOVATION", "TALENT", "CAREERS"]}
-        />
-        <Marquee
-          direction="right"
-          items={["PERSONA PLUS", "LEARN", "EXCEL", "EVOLVE", "IMPACT", "COMMUNITY"]}
-        />
-      </div>
+
     </section>
   );
 };
 
-const Marquee = ({ items, direction }: { items: string[]; direction: "left" | "right" }) => {
-  const line = (
-    <div className="marquee-track">
-      {items.map((t, i) => (
-        <span key={i} className="flex items-center gap-8 text-xl md:text-3xl font-bold tracking-[0.2em] text-gradient whitespace-nowrap">
-          {t}
-          <span className="text-teal/60">·</span>
-        </span>
-      ))}
-    </div>
-  );
-  return (
-    <div className={`marquee ${direction === "left" ? "marquee-left" : "marquee-right"}`}>
-      {line}
-      {line}
-    </div>
-  );
-};
+
 
 export default Hero;
