@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import logo from "@/assets/persona-logo.jpeg";
 
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
@@ -24,8 +26,8 @@ const Navbar = () => {
       }}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-        <motion.a
-          href="#top"
+        <Link
+          to="/"
           whileHover={{ scale: 1.05 }}
           className="flex items-center gap-3 rounded-md px-2 py-1"
           style={{ display: "inline-flex" }}
@@ -40,8 +42,12 @@ const Navbar = () => {
             }}
           />
           <span className="text-2xl md:text-3xl font-bold tracking-tight text-gradient">Persona+</span>
-        </motion.a>
-
+        </Link>
+        <div className="hidden md:flex items-center gap-8 font-medium text-foreground">
+          <a href="/#about" className="hover:text-teal transition-colors">About</a>
+          <a href="/#events" className="hover:text-teal transition-colors">Events</a>
+          <Link to="/team" className="hover:text-teal transition-colors">Team</Link>
+        </div>
       </nav>
     </motion.header>
   );

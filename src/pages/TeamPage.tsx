@@ -1,25 +1,28 @@
+import { useEffect } from "react";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Events from "@/components/Events";
-import Coordinator from "@/components/Coordinator";
+import Team from "@/components/Team";
+import OldTeam from "@/components/OldTeam";
 import Footer from "@/components/Footer";
 
-const Index = () => {
+const TeamPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="relative bg-white text-foreground min-h-screen overflow-x-hidden">
       <CustomCursor />
       <ScrollProgress />
       <Navbar />
-      <Hero />
-      <About />
-      <Events />
-      <Coordinator />
+      <div className="pt-24">
+        <Team />
+        <OldTeam />
+      </div>
       <Footer />
     </main>
   );
 };
 
-export default Index;
+export default TeamPage;

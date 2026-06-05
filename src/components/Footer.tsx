@@ -1,64 +1,84 @@
-import { motion } from "framer-motion";
 import logo from "@/assets/persona-logo.jpeg";
-import { getEventDateText } from "@/lib/utils";
+import { Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="relative pt-32 pb-12 px-6 overflow-hidden">
-      <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[2px]"
-        style={{ background: "linear-gradient(90deg, transparent, #4a8baf, transparent)", boxShadow: "0 0 30px rgba(74, 139, 175,0.2)" }}
-      />
-      <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-[200px] pointer-events-none"
-        style={{ background: "radial-gradient(ellipse at top, rgba(74, 139, 175,0.25), transparent 70%)" }}
-      />
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={{ hidden: {}, show: { transition: { staggerChildren: 0.15 } } }}
-        className="relative max-w-5xl mx-auto text-center space-y-6"
-      >
-        <motion.div
-          variants={{ hidden: { opacity: 0, scale: 0.6 }, show: { opacity: 1, scale: 1, transition: { duration: 0.8 } } }}
-          className="flex justify-center"
-        >
-          <motion.img
-            src={logo}
-            alt="Persona+ logo"
-            className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover"
-            style={{
-              boxShadow: "0 0 50px rgba(74, 139, 175,0.7), 0 0 100px rgba(74, 139, 175,0.3)",
-              border: "2px solid rgba(200, 216, 228,0.5)",
-            }}
-          />
-        </motion.div>
-        <motion.h3
-          variants={{ hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
-          className="text-5xl sm:text-7xl font-bold shimmer-text tracking-tight"
-        >
-          Persona Plus
-        </motion.h3>
-        <motion.p
-          variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
-          className="text-teal/70 tracking-wide leading-relaxed"
-        >
-          The Soft Skills Club of JSS STU
-          <br />
-          Building confident communicators and leaders of tomorrow.
-        </motion.p>
-        <motion.div
-          variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
-          className="inline-block h-px w-24 bg-gradient-to-r from-transparent via-teal-pale to-transparent"
-        />
-        <motion.p
-          variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: 0.8 } } }}
-          className="text-sm text-teal/80"
-        >
-          Made with 🔥 to empower students through communication.
-        </motion.p>
-      </motion.div>
+    <footer className="relative pt-24 pb-8 px-6 bg-white overflow-hidden border-t border-teal-pale/30 mt-12">
+      <div className="relative max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16">
+          {/* Column 1: Brand & Address */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-4">
+              <img
+                src={logo}
+                alt="Persona+ logo"
+                className="w-16 h-16 rounded-full object-cover shadow-[0_0_20px_rgba(74,139,175,0.4)] border border-teal-pale"
+              />
+              <h3 className="text-3xl font-bold text-foreground tracking-tight">
+                Persona Plus
+              </h3>
+            </div>
+            <div className="text-teal/80 space-y-4 mt-6">
+              <div className="flex items-start gap-3">
+                <MapPin size={20} className="shrink-0 mt-1" />
+                <p className="leading-relaxed">
+                  Sri Jayachamarajendra College of Engineering<br />
+                  JSS STU Campus, Mysuru, 570006
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone size={20} className="shrink-0" />
+                <p>+(91) 9876543210</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Mail size={20} className="shrink-0" />
+                <a href="mailto:personaplus@jssstuniv.in" className="hover:text-teal transition-colors">
+                  personaplus@jssstuniv.in
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Column 2: Important Links */}
+          <div className="md:justify-self-center space-y-6">
+            <h4 className="text-xl font-bold text-foreground">IMPORTANT LINKS</h4>
+            <div className="flex flex-col gap-3 text-teal/80 font-medium">
+              <a href="https://jssstuniv.in/" target="_blank" rel="noreferrer" className="hover:text-teal transition-colors w-max">JSS STU Official</a>
+              <a href="/#about" className="hover:text-teal transition-colors w-max">About Us</a>
+              <a href="/#events" className="hover:text-teal transition-colors w-max">Events Timeline</a>
+              <Link to="/team" className="hover:text-teal transition-colors w-max">Executive Board</Link>
+            </div>
+          </div>
+
+          {/* Column 3: Follow Us */}
+          <div className="md:justify-self-end space-y-6">
+            <h4 className="text-xl font-bold text-foreground">FOLLOW US</h4>
+            <p className="text-teal/80 mb-4 max-w-sm">Stay updated with our latest soft skills workshops and events.</p>
+            <div className="flex gap-4">
+              <a href="https://www.linkedin.com/company/persona-plus-jssstu" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-teal-pale/30 text-teal hover:bg-teal hover:text-white transition-colors">
+                <Linkedin size={20} />
+              </a>
+              <a href="https://www.instagram.com/persona_plus_jssstu" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-teal-pale/30 text-teal hover:bg-teal hover:text-white transition-colors">
+                <Instagram size={20} />
+              </a>
+              <a href="mailto:personaplus@jssstuniv.in" className="p-3 rounded-full bg-teal-pale/30 text-teal hover:bg-teal hover:text-white transition-colors">
+                <Mail size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-teal-pale/40 text-center md:flex md:justify-between md:items-center">
+          <p className="text-sm text-teal/80 font-medium mb-4 md:mb-0">
+            Copyrights &copy; {new Date().getFullYear()} Persona Plus | JSS STU
+          </p>
+          <p className="text-sm text-teal/80 font-medium">
+            Developed by the Tech Board at Persona Plus
+          </p>
+        </div>
+      </div>
     </footer>
   );
 };
