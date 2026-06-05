@@ -3,7 +3,6 @@ import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import Team from "@/components/Team";
-import OldTeam from "@/components/OldTeam";
 import Footer from "@/components/Footer";
 
 const TeamPage = () => {
@@ -18,7 +17,6 @@ const TeamPage = () => {
       <Navbar />
       <div className="pt-24">
         <Team />
-        <OldTeam />
       </div>
       <Footer />
     </main>
